@@ -1,0 +1,40 @@
+input {
+    font-family: var(--roboto-font);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../../assets/img/bk_layer_a.png');
+    background-color: #00225c;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    min-height: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+    margin: 50px 0;
+    padding: 48px 32px;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+}
+
+.error {
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px 16px;
+}

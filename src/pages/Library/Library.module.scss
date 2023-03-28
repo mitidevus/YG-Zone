@@ -1,0 +1,104 @@
+.library {
+    background-image: url('../../assets/img/bk_layer_a.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #00225c;
+}
+
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-text {
+    font-family: var(--handel-font);
+    font-size: 3rem;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card {
+    width: 100%;
+    max-width: 1300px;
+    margin: 20px 10px 20px 10px;
+    padding: 40px 20px 40px 0;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.renew-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.loading {
+    // Animation
+    animation: spin 1s linear infinite;
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+}
+
+.card-unbox {
+    cursor: pointer;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 421px !important;
+        height: 614px !important;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+.card-desc {
+    margin: 60px 60px 60px;
+    font-family: var(--handel-font);
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.attribute {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.banlist {
+    color: var(--red);
+}
+
+.disable {
+    opacity: 0.5;
+    pointer-events: none;
+}

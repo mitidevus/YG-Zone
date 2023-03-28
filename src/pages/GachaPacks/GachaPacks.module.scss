@@ -1,0 +1,243 @@
+.pack-result {
+    background-image: url('../../assets/img/bk_layer_a.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #00225c;
+}
+
+.bronze-border {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    width: 100%;
+    height: 1.5rem;
+    background: linear-gradient(90deg, rgba(35, 20, 2, 0.85) 0%, rgba(35, 20, 2, 0) 50%),
+        linear-gradient(270deg, rgba(35, 20, 2, 0.85) 0%, rgba(35, 20, 2, 0) 50%),
+        radial-gradient(2em 1rem at calc(50% - (70rem / 2)) 0, rgba(255, 218, 0, 0.45), rgba(255, 255, 255, 0)),
+        radial-gradient(6em 1rem at calc(50% + (70rem / 2)) 0, rgba(255, 240, 40, 0.45), rgba(255, 255, 255, 0)),
+        radial-gradient(65rem 40% at 50% 50%, rgba(255, 218, 0, 0.75), rgba(255, 255, 255, 0)),
+        linear-gradient(0, #774603 0%, rgba(119, 70, 3, 0) 40%),
+        linear-gradient(180deg, #774603 0%, rgba(119, 70, 3, 0) 15%), #eac04e;
+    clip-path: polygon(
+        0% 0%,
+        calc(50% - (70rem / 2) - 0.65rem) 0%,
+        calc(50% - (70rem / 2) + 0.35rem) 1rem,
+        calc(50% + (70rem / 2) - 0.35rem) 1rem,
+        calc(50% + (70rem / 2) + 0.65rem) 0%,
+        100% 0%,
+        100% 100%,
+        0% 100%
+    );
+    -webkit-clip-path: polygon(
+        0% 0%,
+        calc(50% - (70rem / 2) - 0.65rem) 0%,
+        calc(50% - (70rem / 2) + 0.35rem) 1rem,
+        calc(50% + (70rem / 2) - 0.35rem) 1rem,
+        calc(50% + (70rem / 2) + 0.65rem) 0%,
+        100% 0%,
+        100% 100%,
+        0% 100%
+    );
+}
+
+.background {
+    position: relative;
+}
+
+.background-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 250px;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% calc(100% - 1rem),
+        calc(50% + (70rem / 2) + 1rem) calc(100% - 1rem),
+        calc(50% + (70rem / 2)) 100%,
+        calc(50% - (70rem / 2)) 100%,
+        calc(50% - (70rem / 2) - 1rem) calc(100% - 1rem),
+        0% calc(100% - 1rem)
+    );
+    -webkit-clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% calc(100% - 1rem),
+        calc(50% + (70rem / 2) + 1rem) calc(100% - 1rem),
+        calc(50% + (70rem / 2)) 100%,
+        calc(50% - (70rem / 2)) 100%,
+        calc(50% - (70rem / 2) - 1rem) calc(100% - 1rem),
+        0% calc(100% - 1rem)
+    );
+}
+
+.search-bar {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pack-result-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 600px;
+}
+
+.pack-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 70rem;
+    margin: 20px auto;
+}
+
+.pack-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 14rem;
+    min-height: 22rem;
+    max-height: 22rem;
+    margin: 1.2rem 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.25rem;
+    background: linear-gradient(90deg, rgba(35, 20, 2, 0.85) 0%, rgba(35, 20, 2, 0) 50%),
+        linear-gradient(270deg, rgba(35, 20, 2, 0.85) 0%, rgba(35, 20, 2, 0) 50%),
+        radial-gradient(2em 1rem at calc(50% - (70rem / 2)) 0, rgba(255, 218, 0, 0.45), rgba(255, 255, 255, 0)),
+        radial-gradient(6em 1rem at calc(50% + (70rem / 2)) 0, rgba(255, 240, 40, 0.45), rgba(255, 255, 255, 0)),
+        radial-gradient(65rem 40% at 50% 50%, rgba(255, 218, 0, 0.75), rgba(255, 255, 255, 0)),
+        linear-gradient(0, #774603 0%, rgba(119, 70, 3, 0) 40%),
+        linear-gradient(180deg, #774603 0%, rgba(119, 70, 3, 0) 15%), #eac04e;
+    box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.pack-img {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    border-radius: 0.5rem;
+    outline: 2px solid rgba(0, 0, 0, 0.4);
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.3rem;
+    }
+}
+
+.gacha-icon {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    color: var(--white);
+}
+
+.pack-info {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--white);
+    font-family: var(--handel-font);
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-page {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    border: 1px solid rgba(34, 34, 34, 0.287);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-page svg {
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+}
+
+.prev {
+    top: 50%;
+    left: 5%;
+    transform: translateY(-60%);
+}
+
+.next {
+    top: 50%;
+    right: 5%;
+    transform: translateY(-60%);
+}
+
+.disable {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.no-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 3rem;
+    font-family: var(--handel-font);
+    color: var(--white);
+}
+
+.result-info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70rem;
+    width: 100%;
+}
+
+.result-text {
+    font-size: 1.5rem;
+    font-family: var(--handel-font);
+    color: var(--white);
+}

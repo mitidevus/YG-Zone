@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Pattaya&family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: "HandelGothic";
+    src: url("../../assets/font/HandelGothic.woff") format("woff"),
+        url("../../assets/font/HandelGothic.woff2") format("woff2"),
+        url("../../assets/font/HandelGothic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #f44336;
+    --secondary-color: #7c7287;
+    --black: #000;
+    --white: #fff;
+    --red: #fc131c;
+    --blue: #00449c;
+    --yellow: #fbca37;
+    --green: #9bc53d;
+    --text-color: #161823;
+
+    --roboto-font: 'Roboto', sans-serif;
+    --cormorant-font: 'Cormorant', serif;
+    --pattaya-font: 'Pattaya', sans-serif;
+    --handel-font: 'HandelGothic', sans-serif;
+}
+
+body {
+    font-family: var(--handel-font);
+}
+
+a[href] {
+    text-decoration: none;
+}
