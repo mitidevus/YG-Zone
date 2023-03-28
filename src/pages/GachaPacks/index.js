@@ -85,7 +85,7 @@ function Packs() {
                         id="search-input"
                         className={cx('search-input')}
                         type="text"
-                        placeholder={'Enter the name of the pack to start the gacha (e.g. Legendary Duelists)'}
+                        placeholder={'Enter the name of the pack to gacha (e.g. Legendary Duelists)'}
                         autoComplete="off"
                         onChange={handleSearchPack}
                     ></input>
