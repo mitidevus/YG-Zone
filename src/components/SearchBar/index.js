@@ -28,7 +28,7 @@ function SearchBar({ size}) {
                 id="search-input"
                 className={cx('search-input')}
                 type="text"
-                placeholder={'Search by Card Name (e.g. Dark Magician)'}
+                placeholder={'Enter the name of the card (e.g. Dark Magician)'}
                 autoComplete="off"
                 onKeyPress={handlePress}
             ></input>

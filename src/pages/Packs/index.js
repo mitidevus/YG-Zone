@@ -85,7 +85,7 @@ function Packs() {
                         id="search-input"
                         className={cx('search-input')}
                         type="text"
-                        placeholder={'Search by Pack Name (e.g. Legendary Duelists)'}
+                        placeholder={'Enter the name of the pack (e.g. Legendary Duelists)'}
                         autoComplete="off"
                         onChange={handleSearchPack}
                     ></input>
